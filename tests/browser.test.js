@@ -40,7 +40,8 @@ test('The pop button should open an alert', async () => {
     const alert = await driver.switchTo().alert();
     const alertText = await alert.getText();
 
-    expect(alertText).toContain("pop");
+    expect(alertText).toContain("Tog bort");
+    alert.accept();
 })
 
 describe('Clicking "Pusha till stacken"', () => {
